@@ -15,7 +15,7 @@ namespace Order_Management_System
 
 
         OrderManagementSystemEntities entities = new OrderManagementSystemEntities();
-        private object convert;
+       
 
         public ProductForm()
         {

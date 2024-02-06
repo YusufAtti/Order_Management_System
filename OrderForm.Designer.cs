@@ -100,12 +100,12 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(639, 194);
+            this.dataGridView1.Size = new System.Drawing.Size(719, 194);
             this.dataGridView1.TabIndex = 17;
             // 
             // btnOupdate
             // 
-            this.btnOupdate.Location = new System.Drawing.Point(395, 391);
+            this.btnOupdate.Location = new System.Drawing.Point(583, 389);
             this.btnOupdate.Name = "btnOupdate";
             this.btnOupdate.Size = new System.Drawing.Size(135, 37);
             this.btnOupdate.TabIndex = 21;
@@ -114,7 +114,7 @@
             // 
             // btnODelete
             // 
-            this.btnODelete.Location = new System.Drawing.Point(395, 342);
+            this.btnODelete.Location = new System.Drawing.Point(583, 340);
             this.btnODelete.Name = "btnODelete";
             this.btnODelete.Size = new System.Drawing.Size(135, 37);
             this.btnODelete.TabIndex = 20;
@@ -123,21 +123,23 @@
             // 
             // btnOAdd
             // 
-            this.btnOAdd.Location = new System.Drawing.Point(395, 293);
+            this.btnOAdd.Location = new System.Drawing.Point(583, 291);
             this.btnOAdd.Name = "btnOAdd";
             this.btnOAdd.Size = new System.Drawing.Size(135, 37);
             this.btnOAdd.TabIndex = 19;
             this.btnOAdd.Text = "ADD";
             this.btnOAdd.UseVisualStyleBackColor = true;
+            this.btnOAdd.Click += new System.EventHandler(this.btnOAdd_Click);
             // 
             // btnOlist
             // 
-            this.btnOlist.Location = new System.Drawing.Point(395, 242);
+            this.btnOlist.Location = new System.Drawing.Point(583, 240);
             this.btnOlist.Name = "btnOlist";
             this.btnOlist.Size = new System.Drawing.Size(135, 37);
             this.btnOlist.TabIndex = 18;
             this.btnOlist.Text = "LIST";
             this.btnOlist.UseVisualStyleBackColor = true;
+            this.btnOlist.Click += new System.EventHandler(this.btnOlist_Click);
             // 
             // label5
             // 
@@ -159,7 +161,7 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(145, 286);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(213, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(371, 22);
             this.dateTimePicker1.TabIndex = 24;
             // 
             // cmbCusId
@@ -167,7 +169,7 @@
             this.cmbCusId.FormattingEnabled = true;
             this.cmbCusId.Location = new System.Drawing.Point(145, 320);
             this.cmbCusId.Name = "cmbCusId";
-            this.cmbCusId.Size = new System.Drawing.Size(112, 24);
+            this.cmbCusId.Size = new System.Drawing.Size(371, 24);
             this.cmbCusId.TabIndex = 25;
             // 
             // cmbProdctId
@@ -175,14 +177,14 @@
             this.cmbProdctId.FormattingEnabled = true;
             this.cmbProdctId.Location = new System.Drawing.Point(145, 353);
             this.cmbProdctId.Name = "cmbProdctId";
-            this.cmbProdctId.Size = new System.Drawing.Size(112, 24);
+            this.cmbProdctId.Size = new System.Drawing.Size(371, 24);
             this.cmbProdctId.TabIndex = 26;
             // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(880, 516);
             this.Controls.Add(this.cmbProdctId);
             this.Controls.Add(this.cmbCusId);
             this.Controls.Add(this.dateTimePicker1);
@@ -200,6 +202,7 @@
             this.Controls.Add(this.txtOid);
             this.Name = "OrderForm";
             this.Text = "OrderForm";
+            this.Load += new System.EventHandler(this.OrderForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
